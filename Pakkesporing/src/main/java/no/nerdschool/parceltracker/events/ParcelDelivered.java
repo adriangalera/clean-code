@@ -2,18 +2,18 @@ package no.nerdschool.parceltracker.events;
 
 public class ParcelDelivered extends ParcelStatus {
 
-    private final String sted;
+    private final String location;
     private final String status;
 
-    public ParcelDelivered(String pakkeId, String tidspunkt, String sted, String status) {
-        super(pakkeId, tidspunkt);
+    public ParcelDelivered(String parcelId, String timestamp, String location, String status) {
+        super(parcelId, timestamp);
 
-        this.sted = sted;
+        this.location = location;
         this.status = status;
     }
 
-    public String getSted() {
-        return sted;
+    public String getLocation() {
+        return location;
     }
 
     public String getStatus() {
