@@ -1,6 +1,6 @@
-package no.nerdschool.testeksempel;
+package no.nerdschool.unittestexample;
 
-public class Eksempel
+public class Example
 {
     public static int returnTwo() {
         return 2;
