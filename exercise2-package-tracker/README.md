@@ -1,8 +1,8 @@
-# Exercise 2 - Package tracker
+# Exercise 2 - Parcel tracker
 
-In this exercise you will be creating a package tracker. Some code is provided as a starting point.
+In this exercise you will be creating a parcel tracker. Some code is provided as a starting point.
 
-# 1. Package tracker system
+# 1. Parcel tracker system
 
 ## Tracker events
 There are 3 events in the system:
@@ -22,12 +22,13 @@ public interface ParcelTracker {
 
 # 2. Assignment
 
-- Create an implementation of the `ParcelTracker` interface and write tests. The `getParcelStatusForParcelId` method should return the following depending on the package status:
-    - `ParcelRegistered` => “Parcel is registered”
-    - `ParcelScanned` (`location != {To}`) => “Parcel last seen at {Location}”
-    - `ParcelScanned` (`location == {To}`) => “Parcel ready to be picked up”
-    - `ParcelDelivered` => “Parcel delivered”
-- The package tracker should:
+- Create an implementation of the `ParcelTracker` interface and write tests.
+    -  The `getParcelStatusForParcelId` method should return the following depending on the package status:
+        - `ParcelRegistered` => “Parcel is registered”
+        - `ParcelScanned` (`location != {To}`) => “Parcel last seen at {Location}”
+        - `ParcelScanned` (`location == {To}`) => “Parcel ready to be picked up”
+        - `ParcelDelivered` => “Parcel delivered”
+- Your parcele tracker should:
     - Assign a unique ID to a package
     - Send a package from a post office to another.
     - Keep track of status changes (`sent`, `scanned`, `received`)
