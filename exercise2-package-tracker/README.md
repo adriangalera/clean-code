@@ -34,4 +34,5 @@ public interface ParcelTracker {
     - `ParcelScanned` (`location != {To}`) => “Parcel last seen at {Location}”
     - `ParcelScanned` (`location == {To}`) => “Parcel ready to be picked up”
     - `ParcelDelivered` => “Parcel delivered”
+- Write tests
 - Create a console application that calls your `ParcelTracker` class
