@@ -30,8 +30,8 @@ public interface ParcelTracker {
     - Register several packages
     - Keep track of delivered packages 
 -  The `getParcelStatusForParcelId` method should return the following depending on the package status:
-        - `ParcelRegistered` => “Parcel is registered”
-        - `ParcelScanned` (`location != {To}`) => “Parcel last seen at {Location}”
-        - `ParcelScanned` (`location == {To}`) => “Parcel ready to be picked up”
-        - `ParcelDelivered` => “Parcel delivered”
+    - `ParcelRegistered` => “Parcel is registered”
+    - `ParcelScanned` (`location != {To}`) => “Parcel last seen at {Location}”
+    - `ParcelScanned` (`location == {To}`) => “Parcel ready to be picked up”
+    - `ParcelDelivered` => “Parcel delivered”
 - Create a console application that calls your `ParcelTracker` class
