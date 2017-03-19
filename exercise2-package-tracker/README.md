@@ -20,9 +20,8 @@ public interface ParcelTracker {
 }
 ```
 
-# 2. Exe
+# 2. Assignment
 
-## Exercise
 - Create an implementation of the `ParcelTracker` interface and write tests. The `getParcelStatusForParcelId` method should return the following depending on the package status:
     - `ParcelRegistered` => “Parcel is registered”
     - `ParcelScanned` (`location != {To}`) => “Parcel last seen at {Location}”
