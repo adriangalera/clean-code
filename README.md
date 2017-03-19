@@ -1,29 +1,26 @@
 # Clean Code & Refactoring
 
-### Requirements
+## [Open presentation slides](https://docs.google.com/presentation/d/1E53FHXGFH7p929PJPCSUwT-rF0yTP_XIR6ppxaVcHrM/edit?usp=sharing)
 
-- Maven: https://maven.apache.org/ 
-- Java: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-- IntelliJ Community Edition: https://www.jetbrains.com/idea/#chooseYourEdition
-- Git: https://git-scm.com/
+## Focus of this lesson
+This lesson is oriented around teaching you how to refactor and write clean code in Java. In order to get the most out of the lesson basic programming skills are required.
 
-**Please try to create and build a hello world project in IntelliJ using Maven before the workshop! The less time spent fixing Java paths and SDK versions the better.**
+## What you need
+- IntelliJ Community Edition: [IntelliJ Community Edition](https://www.jetbrains.com/idea/download/)
+- Java dev kit: [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-### How to run code with Maven
+## How to get started
 
-**Ensure that:**
+* Start by cloning this repository into a folder on your computer. If you've never used git before, you can alternatively use the the "Download ZIP" button to the right.
+* Although you have this `README.md` file on your computer it's easier to read it on GitHub, so we recommend you keep this page open with the exercise tasks.
 
-- Maven is on your PATH (typing `mvn --version` in a terminal should not produce an error)
-- If Maven is _not_ on your PATH, you have to add it. 
-    - Windows: `Control Panel -> Search "environment variables" -> "Edit environment variables for your account" -> find the PATH variable -> In the Value field add the directory where your mvn.exe is located`
-   
-With Maven ready, you can either run it from a terminal:
+## Exercises
+This repository contains a set of exercises organized in folders. Each folder contains a `README.md` describing the exercise:
 
-- Open a terminal and navigate to where the project's `POM.xml` file is located
-- `mvn compile`
-- `mvn test`
+- [Exercise 1 - Ugly code](exercise1-uglycode/)
+- [Exercise 2 - Package tracker](exercise2-package-tracker/)
 
-Or you can run it from within IntelliJ:
-
-- In IntelliJ, open the folder where the `POM.xml` is located as a project
-- Run from the Run menu
+## Helpful resources
+- [IntelliJ video tutorials](https://www.jetbrains.com/idea/documentation/)
+- [IntelliJ for Eclipse users](https://www.jetbrains.com/help/idea/2016.3/eclipse.html)
+- [IntelliJ testing](https://www.jetbrains.com/help/idea/2016.3/testing.html)
