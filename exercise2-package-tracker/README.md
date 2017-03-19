@@ -2,7 +2,7 @@
 
 In this exercise you will be creating a parcel tracker. Some code is provided as a starting point.
 
-# 1. Parcel tracker system
+# 1. Parcel tracker system description
 
 ## Tracker events
 There are 3 events in the system:
