@@ -6,9 +6,9 @@ In this exercise you will be creating a parcel tracker. Some code is provided as
 
 ## Tracker events
 There are 3 events in the system:
-- `ParcelRegistered` (fields: `id`, `timestamp`, `from`, `to`)
-- `ParcelScanned` (fields: `id`, `timestamp`, `location`)
-- `ParcelReceived` (`id`, `timestamp`)
+- `ParcelRegistered` (fields: `parcelId`, `timestamp`, `fromLocation`, `toLocation`)
+- `ParcelScanned` (fields: `parcelId`, `timestamp`, `location`)
+- `ParcelDelivered` (fields: `parcelId`, `timestamp`, `location`, `status`))
 
 ## The `ParcelTracker` interface
 The example code contains an interface called `ParcelTracker`:
