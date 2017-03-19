@@ -17,5 +17,5 @@ We are going to assume you have IntelliJ Community Edition installed.
 
 - The code does some math-y things...
 - Analyze and understand the code.
-- Write tests that verify your presumptions (See the [All about testing code](https://github.com/nerdschoolbergen/all-about-testing-code workshop) exercises if you have forgotten how to write tests)
+- Write tests that verify your presumptions (See the [All about testing code](https://github.com/nerdschoolbergen/all-about-testing-code) workshop exercises if you have forgotten how to write tests)
 - Refactor the code ensure the tests are still passing.
