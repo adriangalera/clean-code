@@ -1,4 +1,6 @@
-# Clean Code & Refactoring
+# Refactoring and clean code
+
+Code refactoring is the process of restructuring existing computer code without changing its external behavior. Learn how and why in this session.
 
 ## [Open presentation slides](https://docs.google.com/presentation/d/1E53FHXGFH7p929PJPCSUwT-rF0yTP_XIR6ppxaVcHrM/edit?usp=sharing)
 
