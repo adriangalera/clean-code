@@ -16,19 +16,14 @@ public class SimpleParcelTracker implements ParcelTracker {
     }
 
     @Override
-    public String newParcelId() {
-        return UUID.randomUUID().toString();
-    }
-
-    @Override
-    public String sendParcel(String from, String to) {
+    public String send(String from, String to) {
         ParcelRegistered parcelRegistered = new ParcelRegistered(newParcelId(), currentTimestamp(), from, to);
         handleNewParcelStatus(parcelRegistered);
         return parcelRegistered.getParcelId();
     }
 
     @Override
-    public void deliverParcel(String parcelId) {
+    public void deliver(String parcelId) {
         ParcelDelivered parcelDelivered = new ParcelDelivered(parcelId, currentTimestamp(), "", "");
         handleNewParcelStatus(parcelDelivered);
     }
@@ -40,11 +35,14 @@ public class SimpleParcelTracker implements ParcelTracker {
     }
 
     @Override
-    public String getParcelStatusForParcelId(String parcelId) {
+    public String status(String parcelId) {
         return status(parcelRepository.getLatestStatus(parcelId));
     }
 
-    @Override
+    public String newParcelId() {
+        return UUID.randomUUID().toString();
+    }
+
     public void handleNewParcelStatus(ParcelStatus parcelStatus) {
         parcelRepository.put(parcelStatus);
     }

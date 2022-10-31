@@ -1,19 +1,12 @@
 package no.nerdschool.parceltracker;
 
-import no.nerdschool.parceltracker.events.ParcelStatus;
-
 public interface ParcelTracker {
 
-    String newParcelId();
+    String send(String from, String to);
 
-    String sendParcel(String from, String to);
-
-    void deliverParcel(String parcelId);
+    void deliver(String parcelId);
 
     void scan(String parcelId, String location);
 
-    String getParcelStatusForParcelId(String parcelId);
-
-    void handleNewParcelStatus(
-        ParcelStatus parcelStatus); //TODO: Sounds like this should be internal to the implementation
+    String status(String parcelId);
 }
