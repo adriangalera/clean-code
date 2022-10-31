@@ -8,6 +8,10 @@ public interface ParcelTracker {
 
     String sendParcel(String from, String to);
 
+    void deliverParcel(String parcelId);
+
+    void scan(String parcelId, String location);
+
     String getParcelStatusForParcelId(String parcelId);
 
     void handleNewParcelStatus(
