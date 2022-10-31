@@ -1,6 +1,7 @@
 package no.nerdschool.parceltracker.events;
 
 public abstract class ParcelStatus {
+
     private final String parcelId;
     private final String timestamp;
 
