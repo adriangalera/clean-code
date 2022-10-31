@@ -146,3 +146,10 @@ public void shouldSubtract(){
   a `OperationParser` and `Operation` and create different tests for the parser and the logic that performs the
   operation
 - The logic to perform the operation could as well be embed in the `Operation` class
+
+What we have achieved at this point?
+
+- The code is much more readable
+- The code is much more modular: we can change the way we compute the operation without affecting the parsing and
+  vice-versa
+- We have tests that cover all features. We can refactor even further without losing any feature
